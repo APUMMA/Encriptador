@@ -1,0 +1,115 @@
+*{
+    background: #b6e787;
+    font-family: 'Bruno Ace';
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+.main{
+    float: left;
+}
+
+.logo{
+    width: 30%;
+    padding-top: 40px;
+    padding-left: 70px;
+}
+
+.txt-area{
+    width: 450px;
+    height: 300px;
+    margin-top: 190px;
+    padding: 7px;
+    border: none;
+    color: #53079e;
+}
+
+.txt-area:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #53079e;
+    opacity: 60%;
+}
+
+.information{
+    color: #0A3871;
+    font-size: 14px;
+    opacity: 60%;
+}
+
+.information::before{
+    content: url(../images/info.png);
+    position: relative;
+    right: 5px;
+    top: 3px;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.btn-encrypt{
+    width: 230px;
+    padding: 10px;
+    border: 1px solid #53079e;
+    border-radius: 30px;
+    color: #FFFFFF;
+    background: #53079e;
+}
+
+.btn-decrypt{
+    width: 230px;
+    padding: 10px;
+    border: 1px solid #53079e;
+    border-radius: 30px;
+    color: #53079e;
+    background: #D8DFE8;
+}
+
+.txt-message{
+    width: 350px;
+    height: 540px;
+    margin-left: 80px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 30px;
+    background: #D8DFE8;
+    padding: 12px;
+    color: #53079e;
+}
+
+.txt-message:focus{
+    outline: none;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-copy{
+    width: 230px;
+    padding: 10px;
+    border: 1px solid #53079e;
+    border-radius: 30px;
+    color: #53079e;
+    background: #D8DFE8;
+    position: absolute;
+    top: 546px;
+    right: 275px;
+}
+
+.footer{
+    text-align: center;
+}
+
+.copyright{
+    background-color: #53079e;
+    color: #ffffff;
+    display: inline-block;
+    width: 100%;
+    margin: 70px auto 0;
+    padding:  80px 0 80px;
+}
