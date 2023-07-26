@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,34 +10,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+    <!-- <script src="JavaScript/Script.js"></script> -->
 </head>
     <body>
-        <header class="main">
-            <figure>
-                <img src="images/Logo2.png" alt="Imagen logo de alura" class="logo">
-            </figure>
+        <header class="headerr">
+            <!-- <figure class="header"> -->
+                <img src="images/Logo2.png" alt="Logo de alura" class="logo-alura">
+            <!-- </figure> -->
         </header>
         <main>
-            <section class="main">
-                <textarea class="txt-area" name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <section class="container container-1">
+                <div class="item item-1">
+                    <textarea class="txt-area txt-area-1" name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
 
-                <h6 class="information">Sólo letras minúsculas y sin acentos</h6>
-                
-                <div class="buttons">
-                    <button class="btn-encrypt">Encriptar</button>
-                    <button class="btn-decrypt">Desencriptar</button>
+                <div class="item item-2">
+                    <h6 class="information">Sólo letras minúsculas y sin acentos</h6>
+                </div>
+
+                <div class="item item-3">
+                    <div><button class="btns btn-encrypt" onclick="btnEncrypt()">Encriptar</button></div>
+                    <div><button class="btns btn-decrypt" onclick="btnDecrypt()">Desencriptar</button></div>
                 </div>
             </section>
 
-            <section class="main">
-                <textarea name="" id="" cols="30" rows="10" class="txt-message"></textarea>
-                <div class="btn-copiar">
-                    <button class="btn-copy">Copiar</button>
+            <section class="container container-2">
+                <!-- <div class="item item-4"> -->
+                    <textarea class="txt-area txt-area-2" name="" id="" cols="30" rows="10" ></textarea>
+                <!-- </div> -->
+                
+                <div class="item item-5" id="textos">
+                  <p class="parr texto1">Ningún mensaje fue encontrado</p>
+                  <p class="parr texto2">Ingresa el texto que desees encriptar o desencritar</p>
                 </div>
+
+                <div class="item item-6">
+                    <button class="btns btn-copy" onclick="copy()">Copiar</button>
+                </div>
+                
             </section>
         </main>
+
         <footer class="footer">
-            <p class="copyright">&copy Copyright. Proyecto realizado por Angel E. de la Puente M, para Oracle One / Alura. Sincelejo, Colombia - 2023</p>
-        </footer>
+            <div class="div-footer">
+                <div class="div">
+                  <p class="copyright">&copy Copyright. Proyecto realizado por Angel E. de la Puente M, para Oracle One / Alura. Sincelejo, Colombia - 2023</p>
+                </div>
+                
+                <div class="social-media">
+                  <a href="http://www.linkedin.com/in/angeldelapuentem" target="_blank"><img src="images/Linkedin.png" alt="Imagen logo de Linkedin" class="logos logo-linkedin"></a>
+                  <a href="https://github.com/APUMMA?tab=repositories" target="_blank"><img src="images/Github.png" alt="Imagen logo de Github" class="logos logo-github"></a>
+                </div>
+            </div>
+      </footer>
+      
+      <script src="JavaScript/Script.js"></script>
+
     </body>
 </html>
